@@ -15,7 +15,7 @@ defaults: &defaults
   reconnect: true
   pool: 5
   username: gms
-  password: <%= begin IO.read(".db") rescue "" end %>
+  password: <%= begin IO.read(".dbpasswd") rescue "" end %>
   socket: /var/run/mysqld/mysqld.sock
 
 
